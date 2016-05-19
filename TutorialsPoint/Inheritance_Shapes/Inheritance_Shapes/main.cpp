@@ -24,12 +24,19 @@ using namespace std;
 int main()
 {
    Rectangle rectangle;
+   int area;
  
    rectangle.setWidth(5);
    rectangle.setHeight(7);
 
+   area = rectangle.getArea();
+
    // Print the area of the object.
-   cout << "Total area: " << rectangle.getArea() << endl;
+   cout << "Total area: " << area << endl;
+
+   // Print the total cost of painting
+   cout << "Total paint cost: $" << rectangle.getCost(area) << endl;
+
    system("pause");
    return 0;
 }
